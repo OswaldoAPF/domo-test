@@ -74,20 +74,22 @@ window.addEventListener('scroll', function() {
 });
 
 
-
 window.addEventListener('scroll', function() {
   var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
   var navLinks = document.querySelectorAll('.nav-link');
-  
+
   navLinks.forEach(function(link) {
-    var section = document.querySelector(link.getAttribute('href'));
-    var sectionTop = section.offsetTop;
-    var sectionHeight = section.offsetHeight;
-    
-    if (scrollPos >= sectionTop - 70 && scrollPos < sectionTop + sectionHeight) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
+    var sectionId = link.getAttribute('href');
+    var section = document.querySelector(sectionId); 
+    if (section) {
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.offsetHeight;
+      
+      if (scrollPos >= sectionTop - 80 && scrollPos < sectionTop + sectionHeight - 80) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
     }
   });
 });

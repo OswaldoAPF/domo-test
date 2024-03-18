@@ -238,7 +238,6 @@ button.custom-blue:hover {
 }
 
 
-
 /* Media Queries */
 
 @media (min-width: 992px) {
@@ -305,7 +304,7 @@ button.custom-blue:hover {
   }
 
   .custom-principal-padding {
-    padding: 0px 10% !important;
+    padding: 0px 8% !important;
   }
 
   .custom-size-icon {
@@ -332,7 +331,7 @@ button.custom-blue:hover {
   }
 
   .custom-principal-padding {
-    padding: 0px 15% !important;
+    padding: 0px 12% !important;
   }
 
   .custom-size-icon {
@@ -347,12 +346,24 @@ button.custom-blue:hover {
     width: 240px;
   }
 
+  .custom-size-card {
+    width: 470px !important;
+    height: 475px !important;
+    padding: 0 30px !important;
+  }
+
 }
 
 @media (min-width: 1600px) {
 
   .custom-size-icon {
     font-size: 90px;
+  }
+
+  .custom-size-card {
+    width: 425px !important;
+    height: 475px !important;
+    padding: 0 45px !important;
   }
 
 }
