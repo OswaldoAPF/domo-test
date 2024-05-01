@@ -14,7 +14,7 @@
 
 
 ## URL 🌼
-Para interactuar con la aplicación ingresa aqui -> <a href="https://domo-test-oswaldo.netlify.app/" target="_blank">⚡Domo Test </a>
+Para interactuar con la aplicación ingresa aqui -> <a href="https://compleet-labs-domo.netlify.app/" target="_blank">⚡Domo Test </a>
 
 
 ## Otros Recursos Utilizados ⚙
