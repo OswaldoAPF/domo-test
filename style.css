@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+/* General */
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  font-family: "Montserrat";
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  width: 100% !important;
+  height: 100vh !important;
+  background-color: #283345 !important;
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+body::-webkit-scrollbar{
+  width: 10px !important;
+  background-color: rgba(0, 0, 0, 0.219);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+header {
+  height: 90px !important;
+  position: fixed;
+  top: 0;
+  transition: height 0.5s ease;
+  z-index: 3;
+}
+
+
+footer {
+  height: 250px !important;
+}
+
+.header-scroll {
+  height: 60px !important;
+  background-color: #2833458a !important;
+}
+
+.navbar-modal {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.852);
+  backdrop-filter: blur(4px);
+  text-align: center !important;
+  transition: top 0.5s ease;
+}
+
+.navbar-modal.active {
+  top: 0;
+  left: 0;
+  transition: top 0.5s ease;
+}
+
+
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.bar {
+  all: unset;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  z-index: 2 !important;
+}
+
+.bar span {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background: #f1faee;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.bar span.top {
+  top: 5px;
+}
+
+.bar span.middle {
+  top: 18px;
+}
+
+.bar span.bottom {
+  bottom: 5px;
+}
+
+.bar.active span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 35px;
+  left: 10px;
+  box-shadow: 0 0 10px #495057;
+}
+
+.bar.active span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 35px;
+  bottom: 7px;
+  box-shadow: 0 0 10px #495057;
+}
+
+.bar.active span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+
+/* Custom Styles */
+.custom-background-color {
+  background-color: #283345 !important;
+}
+
+.custom-background {
+  width: 500px;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  z-index: -1;
+}
+
+.custom-height {
+  height: auto !important;
+}
+
+.custom-height-2 {
+  height: auto !important;
+}
+
+.custom-principal-padding {
+  padding: 0px 8% !important;
+}
+
+.custom-blue {
+  background-color: #3871FF !important;
+}
+
+.custom-text-blue{
+  color: #3871FF !important;
+}
+
+a.custom-blue:hover {
+  background-color: #1f5fff !important;
+}
+
+.custom-size-card {
+  width: 380px !important;
+  height: 475px !important;
+  padding: 0 45px !important;
+}
+
+
+.custom-icon-card {
+  width: 70px; 
+  height: 70px; 
+  font-size:30px
+}
+
+.custom-gap-cards {
+  gap: 30px;
+}
+
+.custom-rounded {
+  border-radius: 3px !important;
+}
+
+.custom-font-size {
+  font-size: 15px !important;
+}
+
+
+.custom-padding-section {
+  padding-top: 40px !important;
+}
+
+.custom-font-size-tech {
+  font-size: 15px!important;
+}
+
+.custom-font-size-title-tech {
+  font-size: 20px!important;
+}
+
+.custom-size-icon {
+  font-size: 30px;
+}
+
+.custom-title-brand {
+  font-size: 10px;
+}
+
+.custom-font-brand {
+  font-size: 15px;
+}
+
+.custom-size-brand:nth-child(1) {
+  width: auto !important;
+  height: 50px !important;
+}
+.custom-size-brand:nth-child(2) {
+  width: auto !important;
+  height: 50px !important;
+}
+.custom-size-brand:nth-child(3) {
+  width: auto !important;
+  height: 60px !important;
+}
+.custom-size-brand:nth-child(4) {
+  width: auto !important;
+  height: 70px !important;
+}
+.custom-size-brand:nth-child(5) {
+  width: auto !important;
+  height: 50px !important;
+}
+
+.custom-img-preview {
+
+  width: 210px;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+
+  .custom-background {
+    width: 800px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .navbar-modal {
+    height: 100%;
+    width: auto;
+    position: unset;
+    background-color: transparent;
+    backdrop-filter: blur(0px) !important;
+  }
+  
+  .custom-size-card {
+    width: 425px !important;
+    height: 475px !important;
+    padding: 0 45px !important;
+  }
+
+  .custom-size-icon {
+    font-size: 60px;
+  }
+
+  .custom-font-size-tech {
+    font-size: 20px!important;
+  }
+
+  .custom-font-size-title-tech {
+    font-size: 30px!important;
+  }
+
+  .custom-img-preview {
+    width: 180px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .custom-padding-section {
+    padding-top: 60px !important;
+  }
+
+  .custom-icon-card {
+    width: 50px; 
+    height: 50px; 
+    font-size: 20px;
+  }
+
+  .custom-principal-padding {
+    padding: 0px 8% !important;
+  }
+
+  .custom-size-icon {
+    font-size: 50px;
+  }
+
+  .custom-height-2 {
+    height: 60% !important;
+  }
+
+  .custom-img-preview {
+    width: 180px;
+  }
+}
+
+
+
+@media (min-width: 1400px) {
+
+  .custom-icon-card {
+    width: 70px; 
+    height: 70px; 
+    font-size:30px
+  }
+
+  .custom-principal-padding {
+    padding: 0px 12% !important;
+  }
+
+  .custom-size-icon {
+    font-size: 80px;
+  }
+
+  .custom-padding-section {
+    padding-top: 100px !important;
+  }
+
+  .custom-img-preview {
+    width: 240px;
+  }
+
+  .custom-size-card {
+    width: 470px !important;
+    height: 475px !important;
+    padding: 0 30px !important;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .custom-size-icon {
+    font-size: 90px;
+  }
+
+  .custom-size-card {
+    width: 425px !important;
+    height: 475px !important;
+    padding: 0 45px !important;
+  }
+
+}
+
+@media (min-height: 700px) and (min-width: 1200px) {
+
+  .custom-height {
+    height: 90% !important;
+  }
+
+  .custom-padding-section {
+    padding-top: 40px !important;
+  }
+  
+}
+
+@media (min-height: 900px) and (min-width: 1200px) {
+
+  .custom-height {
+    height: 75% !important;
+  }
+
+  .custom-padding-section {
+    padding-top: 90px !important;
+  }
+  
+}
+
+
+@media (min-height: 900px) and (min-width: 1400px) {
+
+  .custom-height {
+    height: 75% !important;
+  }
+  
+}
+
