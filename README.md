@@ -1,7 +1,6 @@
-## <h1 align="center">Domo Test - Oswaldo Pereira </h1>
+## <h1 align="center">Landing Page - Compleet Labs- Oswaldo Pereira </h1>
 
-<div align="center"> <code> Por acá les muestro mi test para la empresa DOMO </code> <br> </div>
-<div align="center"> <code> Es una Landing Page con funcionalidades básicas </code> </div>
+<div align="center"> <code> Por acá les muestro una Landing Page con funcionalidades básicas </code> </div>
 
 ## Tech Stack 🚀 
 
@@ -14,7 +13,7 @@
 
 
 ## URL 🌼
-Para interactuar con la aplicación ingresa aqui -> <a href="https://compleet-labs-domo.netlify.app/" target="_blank">⚡Domo Test </a>
+Para interactuar con la aplicación ingresa aqui -> <a href="https://compleet-labs-domo.netlify.app/" target="_blank">⚡Compleet Labs</a>
 
 
 ## Otros Recursos Utilizados ⚙
